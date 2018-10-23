@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Crypto\\": "crypto"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^2.5",
+    "virgil/sdk": "^5.0",
+    "virgil/crypto": "^5.0"
+  }
+}

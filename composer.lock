@@ -1,0 +1,245 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "11e1581a432b53cee52e48fa0d38a4b9",
+    "packages": [
+        {
+            "name": "virgil/crypto",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VirgilSecurity/virgil-sdk-crypto-php.git",
+                "reference": "e595a53068a0dec00461b48cb78a05bdea33750a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VirgilSecurity/virgil-sdk-crypto-php/zipball/e595a53068a0dec00461b48cb78a05bdea33750a",
+                "reference": "e595a53068a0dec00461b48cb78a05bdea33750a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-virgil_crypto_php": "*",
+                "php": ">=5.6",
+                "virgil/crypto-api": "^5.0"
+            },
+            "provide": {
+                "virgil/crypto-api-implementation": "v5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.6"
+            },
+            "type": "standalone",
+            "autoload": {
+                "files": [
+                    "virgil_crypto_php.php"
+                ],
+                "psr-4": {
+                    "Virgil\\CryptoImpl\\": "Virgil/CryptoImpl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Virgil Security, Inc",
+                    "email": "support@virgilsecurity.com",
+                    "homepage": "https://virgilsecurity.com/"
+                }
+            ],
+            "description": "Virgil is a stack of security libraries (ECIES with Crypto Agility wrapped in Virgil Cryptogram) and all the necessary infrastructure to enable seamless, end-to-end encryption for any application, platform or device. See below for currently available languages and platforms. Get in touch with us to get preview access to our key infrastructure.",
+            "homepage": "http://virgilsecurity.com",
+            "keywords": [
+                "Authentication",
+                "ECIES",
+                "PFS",
+                "Passwordless",
+                "Perfect Forward Secrecy",
+                "Virgil.Keys",
+                "Virgil.Pass",
+                "cross",
+                "cryptography",
+                "decryption",
+                "elliptic",
+                "encryption",
+                "end-to-end",
+                "platform",
+                "security",
+                "verification",
+                "virgil"
+            ],
+            "time": "2018-05-14T06:45:18+00:00"
+        },
+        {
+            "name": "virgil/crypto-api",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VirgilSecurity/virgil-cryptoapi-php.git",
+                "reference": "797dfa266aec50e1e29b0a2a923124e23a57b0f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VirgilSecurity/virgil-cryptoapi-php/zipball/797dfa266aec50e1e29b0a2a923124e23a57b0f0",
+                "reference": "797dfa266aec50e1e29b0a2a923124e23a57b0f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Virgil\\CryptoApi\\": "Virgil/CryptoApi/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Virgil Security, Inc",
+                    "email": "support@virgilsecurity.com",
+                    "homepage": "http://virgilsecurity.com"
+                }
+            ],
+            "description": "Virgil crypto API contains a bunch of common cipher interfaces",
+            "homepage": "http://virgilsecurity.com",
+            "keywords": [
+                "cipher",
+                "crypto api",
+                "virgil crypto"
+            ],
+            "time": "2018-05-14T06:20:45+00:00"
+        },
+        {
+            "name": "virgil/sdk",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VirgilSecurity/virgil-sdk-php.git",
+                "reference": "1cbbc06e283df6fe4cf52d2a6f9fa804ffad090a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VirgilSecurity/virgil-sdk-php/zipball/1cbbc06e283df6fe4cf52d2a6f9fa804ffad090a",
+                "reference": "1cbbc06e283df6fe4cf52d2a6f9fa804ffad090a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.6",
+                "virgil/crypto-api-implementation": "^v5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.6",
+                "virgil/crypto": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Virgil\\": "Virgil/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Virgil Security, Inc",
+                    "email": "support@virgilsecurity.com",
+                    "homepage": "http://virgilsecurity.com"
+                }
+            ],
+            "description": "Virgil is a stack of security libraries (ECIES with Crypto Agility wrapped in Virgil Cryptogram) and all the necessary infrastructure to enable seamless, end-to-end encryption for any application, platform or device. See below for currently available languages and platforms. Get in touch with us to get preview access to our key infrastructure.",
+            "homepage": "https://virgilsecurity.com",
+            "keywords": [
+                "Authentication",
+                "ECIES",
+                "Keyring",
+                "PFS",
+                "Passwordless",
+                "Perfect Forward Secrecy",
+                "Virgil.Keys",
+                "Virgil.Pass",
+                "cross",
+                "cryptography",
+                "decryption",
+                "elliptic",
+                "encryption",
+                "end-to-end",
+                "pki",
+                "platform",
+                "sdk",
+                "security",
+                "verification",
+                "virgil"
+            ],
+            "time": "2018-05-14T06:56:45+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2018-07-29T20:33:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
