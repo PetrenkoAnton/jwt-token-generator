@@ -1,7 +1,6 @@
-<?php require __DIR__ . '/vendor/autoload.php';
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+<?php require __DIR__ . '/vendor/autoload.php'; // Add autoload files (required string)
+(new \Dotenv\Dotenv(__DIR__))->load(); // Load .env variables (required string)
 
-$cryptoService = new \Crypto\CryptoService();
+$identity = "test-identity@mail.com"; // Before generate JWT-token you must verify identity of the user.
 
-echo $cryptoService->generateJWTToken('test-identity@mail.com');
+echo (new \Crypto\AccessTokenGenerator)->generate($identity); // Display JWT-token (echo function)

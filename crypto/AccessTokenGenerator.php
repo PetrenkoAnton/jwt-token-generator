@@ -6,9 +6,9 @@ use Virgil\CryptoImpl\VirgilAccessTokenSigner;
 use Virgil\CryptoImpl\VirgilCrypto;
 use Virgil\Sdk\Web\Authorization\JwtGenerator;
 
-class CryptoService
+class AccessTokenGenerator
 {
-    public function generateJWTToken($identity)
+    public function generate($identity)
     {
         // API_KEY (You got this Key at Virgil Dashboard)
         $privateKeyStr = $_ENV['PRIVATE_KEY'];
